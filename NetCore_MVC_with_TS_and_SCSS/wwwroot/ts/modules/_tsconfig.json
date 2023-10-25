@@ -1,12 +1,9 @@
 {
   "compilerOptions": {
-    "module": "commonjs", // Set module to "es6"
+    "module": "es6",
     "noImplicitAny": false,
     "target": "es6",
     "sourceMap": true
-    //"paths": {
-    //  "undici-types": [ "node_modules/undici-types" ]
-    //}
   },
   "include": [
     "test.ts"
