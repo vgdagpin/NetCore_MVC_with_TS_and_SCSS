@@ -1,13 +1,9 @@
 const gulp = require('gulp');
-const gulp_sass = require('gulp-sass');
-const gulp_typescript = require('gulp-typescript');
-const sass = require('gulp-sass')(require('sass'));
-const sourcemaps = require('gulp-sourcemaps');
-const csso = require('gulp-csso');
-const uglify = require('gulp-uglify');
-const rename = require('gulp-rename');
 const concat = require('gulp-concat');
+const rename = require('gulp-rename');
 const replace = require('gulp-replace');
+const gulp_typescript = require('gulp-typescript');
+const uglify = require('gulp-uglify');
 
 
 // build ts/modules/*.ts
