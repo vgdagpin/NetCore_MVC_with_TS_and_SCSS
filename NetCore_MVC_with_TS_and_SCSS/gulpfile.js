@@ -160,7 +160,7 @@ gulp.task('build-ts-modules', () => buildTsModules(/*'Production'*/));
 exports.$bundleCSS = gulp.series
     (
         'build-kendo',
-        'build-aerish'
+        'build-site'
     );
 
 exports.$bundleJS = gulp.series
@@ -172,10 +172,6 @@ exports.$bundleJS = gulp.series
 
 exports.$bundleMinify = gulp.series
     (
-        //'build-kendo',
         'build-kendo-minified',
-        //'build-aerish',
-        'build-aerish-minified',
-        //'build-ts',
-        //'build-ts-minified'
+        'build-site-minified'
     );
