@@ -1,14 +1,12 @@
 const gulp = require('gulp');
-const gulp_sass = require('gulp-sass');
+// const gulp_sass = require('gulp-sass');
 const gulp_typescript = require('gulp-typescript');
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const csso = require('gulp-csso');
-const cleanCSS = require('gulp-clean-css'); // no need, using csso
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const concat = require('gulp-concat');
-const flatten = require('gulp-flatten');
 const replace = require('gulp-replace');
 
 let siteCSS = [

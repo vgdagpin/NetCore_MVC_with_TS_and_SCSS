@@ -1,9 +1,14 @@
 {
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "gulp-webpack": "^1.5.0",
     "node-sass": "^9.0.0",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@progress/kendo-theme-material": "^7.0.1"
   }
 }
