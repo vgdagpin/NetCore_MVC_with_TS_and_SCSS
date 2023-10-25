@@ -1,6 +1,6 @@
 1. Right click project
 1. Open in Terminal
-1. npm install gulp gulp-typescript gulp-sourcemaps gulp-csso gulp-uglify gulp-rename gulp-concat gulp-replace --save-dev
+1. npm install gulp gulp-typescript gulp-sourcemaps gulp-csso gulp-uglify gulp-rename gulp-concat gulp-replace --save
 1. npm install webpack webpack-cli webpack-stream --save-dev
 1. npm install node-sass --save-dev
 1. npm install @progress/kendo-theme-material --save

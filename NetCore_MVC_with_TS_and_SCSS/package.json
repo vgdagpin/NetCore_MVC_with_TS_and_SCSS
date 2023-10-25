@@ -1,14 +1,32 @@
 {
-  "devDependencies": {
-    "gulp": "^4.0.2",
+  "dependencies": {
+    "@progress/kendo-theme-bootstrap": "*",
+    "@progress/kendo-theme-classic": "*",
+    "@progress/kendo-theme-default": "*",
+    "@progress/kendo-theme-material": "*",
+    "@types/kendo-ui": "^2023.2.0",
+    "browserify": "^17.0.0",
+    "gulp-clean-css": "*",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-flatten": "^0.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "*",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
-    "gulp-webpack": "^1.5.0",
-    "node-sass": "^9.0.0",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "gulp-uglify": "^3.0.2",
+    "install": "^0.13.0",
+    "sass": "*",
+    "webpack.config.js": "^0.0.0"
   },
-  "dependencies": {
-    "@progress/kendo-theme-material": "^7.0.1"
+  "devDependencies": {
+    "@types/jquery": "^3.5.16",
+    "gulp": "^4.0.2",
+    "gulp-replace": "^1.1.4",
+    "gulp-webpack": "^1.5.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }
