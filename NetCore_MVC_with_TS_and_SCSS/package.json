@@ -3,7 +3,8 @@
     "gulp-concat": "*",
     "gulp-rename": "*",
     "gulp-typescript": "*",
-    "gulp-uglify": "*"
+    "gulp-uglify": "*",
+    "undici": "^5.26.5"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
