@@ -6,8 +6,6 @@
     "sourceMap": true
   },
   "include": [
-    "aerisht.ts",
-    "urlHelper.ts",
-    "dialog.ts"
+    "test.ts"
   ]
 }

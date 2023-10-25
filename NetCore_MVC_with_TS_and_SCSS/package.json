@@ -16,6 +16,7 @@
     "gulp-typescript": "*",
     "gulp-uglify": "*",
     "sass": "*",
+    "undici-types": "^5.26.5",
     "webpack.config.js": "^0.0.0"
   },
   "devDependencies": {
