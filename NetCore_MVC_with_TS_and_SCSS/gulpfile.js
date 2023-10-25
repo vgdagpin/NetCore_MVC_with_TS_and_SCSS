@@ -21,24 +21,22 @@ function buildTsModules(env) {
     // create the pipeline
     var pipeline = ts.src()
         .pipe(ts())
-        //.pipe(sourcemaps.init())
-       // .js
-        //.pipe(replace(/^import\s.*from.*$/gm, (match) => `// ${match}`))
-        //.pipe(replace(/export /gm, ''))
-        //.pipe(concat('site-modules.js'))
+        .js
+        .pipe(replace(/^import\s.*from.*$/gm, (match) => `// ${match}`))
+        .pipe(replace(/export /gm, ''))
+        .pipe(concat('site-modules.js'))
         ;
 
-    //if (env == 'Production') {
-    //    pipeline = pipeline
-    //        .pipe(uglify())
-    //        .pipe(rename({ suffix: '.min' }))
-    //        ;
-    //}
+    if (env == 'Production') {
+        pipeline = pipeline
+            .pipe(uglify())
+            .pipe(rename({ suffix: '.min' }))
+            ;
+    }
 
-    //pipeline = pipeline
-    //    .pipe(replace(/^/, autoGenText))
-    //    //.pipe(sourcemaps.write('.'))
-    //    .pipe(gulp.dest('./wwwroot/js'));
+    pipeline = pipeline
+        .pipe(replace(/^/, autoGenText))
+        .pipe(gulp.dest('./wwwroot/js'));
 
     return pipeline;
 }
