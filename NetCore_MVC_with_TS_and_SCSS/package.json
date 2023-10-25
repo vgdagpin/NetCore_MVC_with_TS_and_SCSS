@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@types/jquery": "*",
     "gulp": "*",
     "gulp-concat": "*",
     "gulp-rename": "*",
