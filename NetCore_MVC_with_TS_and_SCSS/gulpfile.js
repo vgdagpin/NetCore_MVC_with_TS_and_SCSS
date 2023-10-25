@@ -154,24 +154,20 @@ function buildCSHTMLTs(env) {
 }
 
 gulp.task('build-ts', () => buildTs(/*'Production'*/));
-gulp.task('build-cshtml-ts', () => buildCSHTMLTs(/*'Production'*/));
+gulp.task('build-ts-cshtml', () => buildCSHTMLTs(/*'Production'*/));
 gulp.task('build-ts-modules', () => buildTsModules(/*'Production'*/));
 
 exports.$bundleCSS = gulp.series
     (
         'build-kendo',
-        'build-site'
+        'build-site',
+        'build-kendo-minified',
+        'build-site-minified'
     );
 
 exports.$bundleJS = gulp.series
     (
         'build-ts-modules',
         'build-ts',
-        'build-cshtml-ts'
-    );
-
-exports.$bundleMinify = gulp.series
-    (
-        'build-kendo-minified',
-        'build-site-minified'
+        'build-ts-cshtml'
     );
