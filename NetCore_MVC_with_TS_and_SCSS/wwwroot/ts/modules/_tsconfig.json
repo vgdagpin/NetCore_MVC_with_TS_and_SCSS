@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "es6", // Set module to "es6"
+    "noImplicitAny": false,
+    "target": "es6",
+    "sourceMap": true
+  },
+  "include": [
+    "module1.ts"
+  ]
+}
