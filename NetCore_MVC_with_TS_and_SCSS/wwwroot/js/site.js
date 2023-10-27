@@ -1,4 +1,13 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+/* This is auto generated, go to Task Runner Explorer and run bundleJS */
 
-// Write your JavaScript code.
+
+class Site {
+}
+var NavigationType;
+(function (NavigationType) {
+    NavigationType[NavigationType["None"] = 0] = "None";
+    NavigationType[NavigationType["InternalUrl"] = 1] = "InternalUrl";
+    NavigationType[NavigationType["ExternalUrl"] = 2] = "ExternalUrl";
+    NavigationType[NavigationType["Job"] = 3] = "Job";
+})(NavigationType || (NavigationType = {}));
+{};
